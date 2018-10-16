@@ -1,4 +1,4 @@
-// stdafx.h : include file for standard system include files,
+﻿// stdafx.h : include file for standard system include files,
 // or project specific include files that are used frequently,
 // but are changed infrequently
 
@@ -6,6 +6,11 @@
 #define XMESSAGEBOX_APPREGPATH "Software\\TortoiseGit\\"
 
 #include "../../src\targetver.h"
+
+#define NOMINMAX
+#include <algorithm>
+using std::min;
+using std::max;
 
 #include <afxwin.h>         // MFC core and standard components
 #include <afxext.h>         // MFC extensions
